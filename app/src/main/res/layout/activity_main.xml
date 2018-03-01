@@ -7,11 +7,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.talon.test.MainActivity">
 
-    <com.example.talon.test.LabelView
+    <com.example.talon.test.WaveView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/yingxiang"/>
+        android:layout_margin="0dp"/>
 
 </android.support.constraint.ConstraintLayout>
