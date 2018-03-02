@@ -26,9 +26,13 @@ public class WaveView extends View {
 
     private Paint mPaint;
     private Path mPath;
+    // 宽高
     private int mWidth, mHeight;
+    // 控制点坐标
     private float mControlX, mControlY;
+    // 波浪峰值
     private float mWaveY;
+    // 控制左右移动方向
     private boolean mMoveControl;
 
 
@@ -82,6 +86,7 @@ public class WaveView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         Log.d(TAG, "onDraw");
+        // 画贝塞尔曲线
         mPath.moveTo(-EXTRA_DISTANCE, mWaveY);
         mPath.quadTo(mControlX, mControlY, mWidth + EXTRA_DISTANCE, mWaveY);
         mPath.lineTo(mWidth, mHeight);
