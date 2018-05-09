@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.example.talon.test.MainActivity">
 
-    <com.example.talon.test.WaveView
+    <!--   <com.example.talon.test.SquareTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:text="HelloWorld"/>-->
+
+    <!--<com.example.talon.test.WaveView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="0dp"/>
+        android:layout_margin="0dp"/>-->
 
-</android.support.constraint.ConstraintLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"/>
+
+    <com.example.talon.test.ArcProgressBar
+        android:id="@+id/arc_progressbar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:text_size="24sp"/>
+    <!-- <VideoView
+         android:id="@+id/videoView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>-->
+    <!--   <com.example.talon.test.MainView
+           android:id="@+id/textureView"
+           android:layout_width="match_parent"
+           android:layout_height="176dp"
+           android:orientation="vertical"/>-->
+
+
+</LinearLayout>

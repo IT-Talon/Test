@@ -50,6 +50,9 @@ public class LabelView extends AppCompatImageView {
         textPath = new Path();
 
         //用来获取文字宽高
+
+
+
         textRect = new Rect();
         textPaint.getTextBounds("Hot", 0, "Hot".length(), textRect);
     }
